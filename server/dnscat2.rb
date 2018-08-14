@@ -104,7 +104,8 @@ if(opts[:security].nil?)
 end
 
 if(opts[:secret].nil?)
-  opts[:secret] = SecureRandom::hex(16)
+  # opts[:secret] = SecureRandom::hex(16)
+  opts[:secret] = "52750b30ffbc7de3b36292b15d6c8dc4"
 end
 
 WINDOW.puts("Welcome to dnscat2! Some documentation may be out of date.")
